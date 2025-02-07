@@ -301,7 +301,7 @@ margin: 0rem;
 @media (max-width: 425px) {
     nav ul {
         gap: 0rem;
-        margin-right: 0.3125rem;
+        margin-right: 1.2rem;
     }
     .image-container img 
     {
@@ -325,13 +325,13 @@ form input[type ="submit"]
 }
 }
 
-/*  media queries for 374 screen size */
+/*  media queries for 375 screen size */
 
 @media (max-width: 375px) {
     nav ul {
         gap: 0rem;
-        margin-right: 0.3125rem;
-    }
+        margin-right: 1.2rem;
+    } 
     .image-container 
     {
         width: 30%;
