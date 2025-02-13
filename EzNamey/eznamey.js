@@ -9,4 +9,4 @@ const secondRandomWords = Math.floor(Math.random() * 10);
 
 const startupName = firstWords[firstRandomWords] + " " + secondWords[firstRandomWords];
 
-console.log(startupName);
+console.log("The startup name is :" + " " + startupName + " " + "contains" + " " + startupName.length + " " + "characters");
