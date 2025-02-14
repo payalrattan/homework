@@ -1,13 +1,15 @@
-
 const dogYearOfBirth = 2017;
 const dogYearFuture = 2027;
-const shouldShowResultInDogYears = true;
-let dogFutureAge;
+const shouldShowResultInDogYears = false;
+let dogFutureAge = dogYearFuture - dogYearOfBirth;
+let yearType;
 if (shouldShowResultInDogYears) {
-    dogFutureAge = (dogYearFuture - dogYearOfBirth) * 7;
-    console.log("Your dog will be" + " " + dogFutureAge + " " + "dog years old in " + dogYearFuture);
+    dogFutureAge *= 7;
+    yearType = "dog years";
 }
 else {
-    dogFutureAge = dogYearFuture - dogYearOfBirth;
-    console.log("Your dog will be" + " " + dogFutureAge + " " + "human years old in" + " " + dogYearFuture)
+    dogFutureAge = dogFutureAge;
+    yearType = "human years";
+
 }
+console.log("Your dog will be" + " " + dogFutureAge + " " + yearType + " " + " old in " + dogYearFuture);
