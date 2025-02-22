@@ -2,7 +2,7 @@ function getFullname(firstname, surname, useFormalName, gender) {
     if (!firstname && !surname) {
         return ("please enter your name");
     }
-    const title = (useFormalName === true) ? (gender === "male" ? "lord" : "lady") : "";
+    const title = (useFormalName) ? (gender === "male" ? "lord" : "lady") : "";
     return title + " " + firstname + " " + surname;
 }
 console.log(getFullname("Payal", "Rattan", true, "female"));

@@ -7,7 +7,7 @@ function addStudentToClass(studentName) {
  else if (class07Students.includes(studentName)) {
     console.log("Student" + " "+ studentName +" "+"is already in the class");
  }
- else if(studentName =="")
+ else if(!studentName)
  {
     console.log("Cannot add an empty string to the class.");
  }
