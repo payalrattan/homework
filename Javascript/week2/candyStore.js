@@ -2,7 +2,6 @@ const boughtCandyPrices = [];
 function addCandy(candyType,weight)
 {
     let pricePergram;
-    let totalSpent = 0;
     switch(candyType)
     {
         case "sweet":pricePergram=0.5; break;
@@ -17,14 +16,11 @@ function addCandy(candyType,weight)
     boughtCandyPrices.push(toatlprice);
     console.log(boughtCandyPrices);
 }
-addCandy("sweet",6);
-addCandy("sweet",5);
-addCandy("sweet",8);
-addCandy("sweet",10);
 const amountToSpend=(Math.random())*100;
 let  totalSpent = 0;
 function canBuyMoreCandy()
 {
+    let totalSpent = 0;
     for (let i = 0; i < boughtCandyPrices.length; i++) {
         totalSpent += boughtCandyPrices[i];
     }
@@ -34,6 +30,8 @@ function canBuyMoreCandy()
     console.log("Remaining balance is "+amountLeft);
      return totalSpent<amountToSpend;
 }
-
-
+addCandy("sweet",6);
+addCandy("chocolate",5);
+addCandy("toffee",8);
+addCandy("chewing-gum",10);
 console.log(canBuyMoreCandy() ? "You can buy more, so please do!" : "Enough candy for you!");
