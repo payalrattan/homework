@@ -10,8 +10,8 @@ function calculateSeriesLife() {
     let totalPercentage = 0;
 
     for (let series of seriesDurations) {
-        let seriesMinutes = series.seasons * (series.minutes + series.hours * 60 + series.days * 24 * 60);
-        let percentage = (seriesMinutes / totalLifeMinutes) * 100;
+        const seriesMinutes = series.seasons * (series.minutes + series.hours * 60 + series.days * 24 * 60);
+        const percentage = (seriesMinutes / totalLifeMinutes) * 100;
 
         console.log(series.title + " " + "seasons" + " " + series.seasons + " " + "took" +" "+percentage + " " + "% of my life");
         totalPercentage += percentage;
